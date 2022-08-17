@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Contact
+@{
+    ViewData["Title"] = "New";
+}
+
+<h3>Add a new Contact</h3>
+
+<form method="post"> 
+    <div class="form-group">
+      <input type="text" class="form-control" asp-for="FirstName" placeholder="First name">
+    </div>
+    <br />
+    <div class="form-group">
+      <input type="text" class="form-control" asp-for="LastName" placeholder="Last name">
+    </div>
+    <br />
+    <div class="form-group">
+      <input type="number" class="form-control" asp-for="PhoneNumber" placeholder="Phone Number">
+    </div>
+    <br />
+    <div class="form-group">
+      <input type="email" class="form-control" asp-for="Email" placeholder="Email">
+    </div>
+    <br />
+    <div class="form-group">
+      <input type="text" class="form-control" asp-for="Address" placeholder="Address">
+    </div>
+    <br />
+    <div class="form-group">
+      <input type="text" class="form-control" asp-for="City" placeholder="City">
+    </div>
+  <button class="btn btn-primary" type="submit">Add</button>
+</form>
